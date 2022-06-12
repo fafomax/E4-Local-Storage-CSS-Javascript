@@ -1,7 +1,9 @@
 const boton = document.getElementById("boton");
 const tituloPizza = document.getElementById("nombrePizza");
 const precioPizza = document.getElementById("precioPizza");
+const ingredientesPizza = document.getElementById("ingredientesPizza");
 const error1 = document.getElementById("error");
+const imgPizza = document.getElementById("#imgPizza");
 const inputNum = document.getElementById("numberFilter");
 const pizzas = [
   {
@@ -48,11 +50,13 @@ function buscadorPizzas() {
     if (value1 === pizzas.id) {
       tituloPizza.innerHTML = pizzas.nombre;
       precioPizza.innerHTML = "$" + pizzas.precio;
+      ingredientesPizza.innerHTML = pizzas.ingredientes.join(", ");
       error1.innerHTML = "";
     } else if (value1 > 5) {
       error1.innerHTML = "Articulo no encontrado ";
       tituloPizza.innerHTML = "";
       precioPizza.innerHTML = "";
+      ingredientesPizza.innerHTML = "";
     }
   });
 }
