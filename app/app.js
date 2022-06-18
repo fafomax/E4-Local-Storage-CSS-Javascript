@@ -20,7 +20,7 @@ function buscadorPizzas() {
             imgPizza.innerHTML = `<img src= "${pizzas.img}" alt="">`;
             error1.innerHTML = "";
         } else if (value1 > 5 || value1 == 0) {
-            imgPizza.innerHTML = `<img src= "/E4-LocalStorage+CSS/assets/error.jpg" alt="">`;
+            imgPizza.innerHTML = `<img src= "./assets/error.jpg" alt="">`;
             error1.innerHTML = "Articulo no encontrado ";
             tituloPizza.innerHTML = "";
             precioPizza.innerHTML = "";
