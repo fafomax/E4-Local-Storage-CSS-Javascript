@@ -3,7 +3,7 @@ export const pizzas = [{
         nombre: "Promo",
         ingredientes: ["Salsa", "Queso", "Jamon", "Morron"],
         precio: 590,
-        img: "/E4-LocalStorage+CSS/assets/1_pizzaPromo.jpg"
+        img: "./assets/1_pizzaPromo.jpg"
     },
     {
         id: 2,
